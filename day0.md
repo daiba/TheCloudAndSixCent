@@ -6,7 +6,7 @@
 * VMWare Fusion 4.1.4
 * CentOS-6.4-x86_64-netinstall.iso
 
-で，作ったCentOS上にバージョンのrpmをインストールし，
+で，作ったCentOS上に以下のバージョンのrpmをインストールし，
 
 * qemu-0.15.0-1.el6.rfx.x86_64
 * sheepdog-0.2.3-2.el6.x86_64
