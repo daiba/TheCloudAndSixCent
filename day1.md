@@ -7,31 +7,30 @@
 作業を追試できないといけないので，windowタイトルとそこで何を
 選択するかをまとめてみます．
 
-> [新規仮想マシンの作成]
-> > ディスクを使用せずに続行
-> [インストールメディア]
-> > オペレーティングシステムのインストールディスクまたはイメージを使用
-> > > CentOS-6.4-x86_64-netinstall.iso
-> [オペレーティングシステムの選択]
-> > オペレーティングシステム：Linux
-> > バージョン: CentOS(64ビット)
-> [終了]
-> > 仮想マシン概要
-> > > ゲストOS: CentOS(64ビット)
-> > > メモリ: 1GB
-> > > ディスクサイズ（最大）: 20GB
-> > > ネットワーク: 共有ネットワーク(NAT)
-> > > CD/DVD: CentOS-6.4-x86_64-netinstall.iso
+* [新規仮想マシンの作成]
+    * ディスクを使用せずに続行
+* [インストールメディア]
+    * オペレーティングシステムのインストールディスクまたはイメージを使用
+         * CentOS-6.4-x86_64-netinstall.iso
+* [オペレーティングシステムの選択]
+    * オペレーティングシステム：Linux
+    * バージョン: CentOS(64ビット)
+* [終了]
+    * 仮想マシン概要
+         * ゲストOS: CentOS(64ビット)
+         * メモリ: 1GB
+         * ディスクサイズ（最大）: 20GB
+         * ネットワーク: 共有ネットワーク(NAT)
+         * CD/DVD: CentOS-6.4-x86_64-netinstall.iso
 
 このあと設定をカスタマイズします．プロセッサを2個以上の値にするのは
 必須条件です．名前を付けること，メモリサイズを増やすことは推奨条件です．
 
-> [設定のカスタマイズ]
-> > 名前: tahiti
->
-> [プロセッサとメモリ]
-> > プロセッサ: 2個のプロセッサコア
-> > メモリ: 2048MB
+* [設定のカスタマイズ]
+    * 名前: tahiti
+* [プロセッサとメモリ]
+    * プロセッサ: 2個のプロセッサコア
+    * メモリ: 2048MB
 
 次にFusion上で'Intel VT'をオンにします．これが設定できないとkvmは
 動きません．VMwareが動くOSやバージョンによって設定方法が違うようです．
@@ -58,46 +57,35 @@ CentOSのインストーラはGUIモードが標準ですが，Fusion上で動�
 
 これから後の行程は皆さんもおなじみでしょう．さらっと流して行きます．
 
-> [Choose a Language]
-> > English
->
-> [Keyboard Type]
-> > jp106
->
-> [Installation Method]
-> > URL
->
-> [Configure TCP/IP]
-> > [*] Enable IPv4 support
-> > > (*) Dynamic IP configuration (DHCP)
-> > [ ] Enabel IPv6 support
->
-> [URL Setup]
-> > http://ftp.iij.ad.jp/pub/linux/centos/6.4/os/x86_64/images/install.img
-> > [*] Enable HTTP proxy
-> > > http://proxy.example.com:8080
->
-> [Would you like to use VNC?]
-> > Use text mode
->
-> [Warning]
-> > Re-initialize all
->
-> [Time Zone Selection]
-> > [ ] System clock uses UTC
-> > > Asia/Tokyo
->
-> [Root Password]
->
-> [Partitioning Type]
-> > > Use entire drive
-> > > [*] sda 20480 MB
->
->[Writing storage configuration to disk]
-> >   Write changes to disk
->
->[Complete]
-> >   Reboot
+* [Choose a Language]
+    * English
+* [Keyboard Type]
+    * jp106
+* [Installation Method]
+    * URL
+* [Configure TCP/IP]
+    * [*] Enable IPv4 support
+    * (*) Dynamic IP configuration (DHCP)
+    * [ ] Enabel IPv6 support
+* [URL Setup]
+    * http://ftp.iij.ad.jp/pub/linux/centos/6.4/os/x86_64/images/install.img
+    * [*] Enable HTTP proxy
+        * http://proxy.example.com:8080
+* [Would you like to use VNC?]
+    * Use text mode
+* [Warning]
+    * Re-initialize all
+* [Time Zone Selection]
+    * [ ] System clock uses UTC
+    * Asia/Tokyo
+* [Root Password]
+* [Partitioning Type]
+    * Use entire drive
+        * [*] sda 20480 MB
+* [Writing storage configuration to disk]
+    * Write changes to disk
+* [Complete]
+    * Reboot
 
 OSインストールが終わったのでrootでloginして作業しましょう．
 まずはhostname設定を
