@@ -170,7 +170,6 @@ OSインストールの最後の作業はrpmの最新化と必要なyumリポジ
  
     $ sudo reboot
     $ sudo rpm -httpproxy http://proxy.example.co.jp:8080 -ivh http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
-    
     $ sudo rpm -httpproxy http://proxy.example.co.jp:8080 -ivh http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
 これでqemuとsheepdogをインストールできるようになりました．ついでに
