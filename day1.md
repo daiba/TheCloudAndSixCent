@@ -81,7 +81,7 @@ CentOSのインストーラはGUIモードが標準ですが，Fusion上で動�
 * [Root Password]
 * [Partitioning Type]
     * Use entire drive
-        * [*] sda 20480 MB
+    * [*] sda 20480 MB
 * [Writing storage configuration to disk]
     * Write changes to disk
 * [Complete]
