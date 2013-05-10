@@ -25,7 +25,7 @@
 資料の流れは以下のようになります
 
 1. ホストOSをセットアップする
-2. openvswitchを作る
+2. openvswitchを使う
 3. qemuとopenvswitchをインスールする
 4. openvswitch用ネットワーク設定
 5. libvirtを作る
