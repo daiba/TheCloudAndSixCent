@@ -1,5 +1,7 @@
 # openvswitchを使う
 
+## 必要な設定
+
 rpmをインストールしたのでopenvswitchが使えるようになりました．
 使う際にはbridgeとして設定します．ここでは元々存在するeth0と
 ovsbr0と名前をつけたbridge用のnetwork-scriptsを設定します．
@@ -40,6 +42,18 @@ macアドレスをスクリプト内に記載する必要はありません．
 * OVS_OPTIONS: Port用のオプション．tag=100だとVLAN100を意味する．ovs-vsctl(8)のadd-portの項とovs-vswitchd.conf.db(5)参照
 * OVS_EXTRA: -- で区切られた追加のovs-vsctlコマンド
 * BOND_IFACES: OVSBondインタフェース用のbond対象の物理インタフェースリスト
+
+このファイルには
+
+* Standalone bridge:
+* Enable DHCP on the bridge:
+* Adding physical eth0 to ovsbridge0 described above:
+* Tagged VLAN interface on top of ovsbridge0:
+* Bonding:
+
+といったケースでの例が記載してあるのでぜひ目を通しておいてください．
+
+## openvswitchを動かしてみる
 
 openvswitch設定前のネットワークアドレスは以下のようになっている
 はずですが，
