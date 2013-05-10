@@ -178,6 +178,28 @@ OSインストールの最後の作業はrpmの最新化と必要なyumリポジ
     $ sudo yum --enablerepo rpmforge-extras install qemu
     $ sudo yum --enablerepo epel install sheepdog
     $ mkdir ~/{rpms,isos,xmls}
+
+別途作り方を説明するopenvswitch用のrpmを開発環境からコピーしてインストール
+します
+
+    // 開発環境から
+    $ scp *openvswitch-1* tahiti:~/rpms
+
+    // tahiti で
+    $ cd ~/rpms
+    $ sudo rpm -ivh kmod-openvswitch-1.7.3-1.el6.x86_64.rpm openvswitch-1.7.3-1.x86_64.rpm
+    準備中...                ########################################### [100%]
+       1:kmod-openvswitch       ########################################### [ 50%]
+    WARNING: /lib/modules/2.6.32-358.6.1.el6.x86_64/weak-updates/openvswitch/brcompat.ko needs unknown symbol ovs_dp_ioctl_hook
+    WARNING: /lib/modules/2.6.32-358.el6.x86_64/weak-updates/openvswitch/brcompat.ko needs unknown symbol ovs_dp_ioctl_hook
+
+       2:openvswitch            ########################################### [100%]
+
+これで最低限の環境が整いました．
+
+    $ sudo reboot
+
+
     
 ----
 
