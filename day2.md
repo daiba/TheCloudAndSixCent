@@ -1,5 +1,11 @@
 # openvswitchを使う
 
+## はじめに
+
+kvmのネットワーク機能としてはlinuxが標準でサポートしている
+bridgeを使うのが一般的ですが，ネットワーク構成を自在に変更するには
+openvswitchを使うと便利です．ところがこのopenvswitchなかなか面倒です．
+
 ## 必要な設定
 
 rpmをインストールしたのでopenvswitchが使えるようになりました．
@@ -139,5 +145,12 @@ network-scriptsにmacアドレスを記載したときにおかしなことが�
 
 Bridge "ovsbr0"配下にeth0インタフェースがあることが確認できます．
 type interalのInterface "ovsbr0"というのが自動的に割り当てられた
-CentOS用のインタフェースになります．PortとInterfaceって何が違うのか，
-調べたのですが，よくわかりません．
+CentOS用のインタフェースになります．
+
+## まとめ
+
+ovs-vsctl showでも表示されるPortとInterface，これが何を意味しているのか
+調べたのですが，よくわかりません．スイッチに相当しているのですから，
+それぞれ物理ポートと物理ポートに設定されたvlan interfaceに該当する
+のではないかと思うのですが，openvswitchでInterfaceにvlan設定するのは
+使いにくくfake bridgeという機能を使うので，よけい複雑なことになっています．
