@@ -180,11 +180,11 @@ Rescue installではexitすると再起動するのでexitをコマンドしま�
 システム以外でfsckを行うことを意味する2を指定しています．
 設定したら再起動して，うまく反映されているかを確認しましょう．
 
-   $ sudo mkdir /data
-   $ diff .fstab fstab
-   9a10
-   > /dev/mapper/VolGroup-lv_data /data  ext4    defaults,user_xattr 1 2
-   $ sudo reboot
+    $ sudo mkdir /data
+    $ diff .fstab fstab
+    9a10
+    > /dev/mapper/VolGroup-lv_data /data  ext4    defaults,user_xattr 1 2
+    $ sudo reboot
 
 ディスクの用意ができたらcorosyncを設定して動かしてみましょう．といっても
 まだ1台しかないので最低限の機能だけ動かします．必要な設定は，使用する
