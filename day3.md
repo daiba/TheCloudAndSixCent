@@ -226,8 +226,6 @@ OS起動時のオートスタートです．設定できたら再起動して
     $ cd /etc/rc.d
     $ sudo mv rc3.d/K79sheepdog rc3.d/S79sheepdog
     $ sudo mv rc5.d/K79sheepdog rc5.d/S79sheepdog
-    $ sudo /etc/init.d/sheepdog start
-    Starting Sheepdog QEMU/KVM Block Storage (sheep):          [  OK  ]
     $ sudo reboot
 
 sheepdogが正しく動いてるかどうかは以下のコマンドで確認できます．
