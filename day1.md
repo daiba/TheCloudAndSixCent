@@ -183,6 +183,7 @@ OSインストールの最後の作業はrpmの最新化と必要なyumリポジ
 作業用ディレクトリもここで作成しておきます．
 
     $ sudo yum --enablerepo rpmforge-extras install qemu
+    $ sudo yum --enablerepo epel install corosynclib-devel
     $ sudo yum --enablerepo epel install sheepdog
     $ mkdir ~/{rpms,isos,xmls}
 
