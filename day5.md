@@ -86,14 +86,23 @@ rpmコマンドの使い方がわかったところで，今度は作り方に�
 以下のようになります．
 
 1. 構築用ディレクトリ作成
+
     $ mkdir -p ~/rpm/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+
 2. .rpmmacros 設定
+
     $ echo "%_topdir /home/WHOAMI/rpm" > ~/.rpmmacros
+
 3. ソースファイル配置
+
     $ mv example-1.0.2.tar.gz ~/rpm/SOURCES
+
 4. SPECファイル配置
+
     $ mv example.spec ~/rpm/SPECS/
+
 5. rpmを作る
+
     $ cd ~/rpm/SPECS
     $ rpmbuild -bb exsample.spec
 
