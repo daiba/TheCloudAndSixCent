@@ -41,7 +41,7 @@ Nested VMです．VMwareでそれが可能だと知ったのがこの本で書�
 
 次にFusion上で'Intel VT'をオンにします．これが設定できないとkvmは
 動きません．VMwareが動くOSやバージョンによって設定方法が違うようです．
-[VMwareのコミュニティサイト][1]にまとめがあったのでこれを参考に
+[VMwareのコミュニティサイト][1-1]にまとめがあったのでこれを参考に
 してください．ここではFusion4を使っているので_hostname_.vmxという
 ファイルに以下の行を追加することになります．
 
@@ -218,4 +218,4 @@ VMWare Fusionを使うとmac上でkvmが動くCentOSを構築することが可�
     
 ----
 
-[1]: http://communities.vmware.com/docs/DOC-8970  "VMware community site"
+[1-1]: http://communities.vmware.com/docs/DOC-8970  "VMware community site"
