@@ -12,40 +12,40 @@
 
 * インストール
 
-    # rpm -i package.rpm
+    \# rpm -i package.rpm
 
 * 複数パッケージのインストール
 
-    # rpm -i package_a.rpm package_b.rpm
+    \# rpm -i package_a.rpm package_b.rpm
 
 * 詳細情報付きインストール
 
-    # rpm -ivh package.rpm
+    \# rpm -ivh package.rpm
 
 * 進行状況表示付きインストール
 
-    # rpm -i --percent package.rpm
+    \# rpm -i --percent package.rpm
 
 * パッケージのアップデート
 
-    # rpm -U package.rpm
+    \# rpm -U package.rpm
 
 * 古いバージョンのパッケージをインストール
 
-    # rpm -i --oldpackage package.rpm
+    \# rpm -i --oldpackage package.rpm
 
 * インストール済みの他のパッケージに含まれるファイルを
 置き換えてでもインストール
 
-    # rpm -i --replacefiles package.rpm
+    \# rpm -i --replacefiles package.rpm
 
 * インストール済みパッケージを再インストール
 
-    # rpm -i --replacepkgs package.rpm
+    \# rpm -i --replacepkgs package.rpm
 
 * インストールせずテストのみ実行
 
-    # rpm -i --test package.rpm
+    \# rpm -i --test package.rpm
  
 * インストール済みパッケージ確認
 
