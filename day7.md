@@ -69,14 +69,14 @@ eth0をeth2に直接編集して修正します．以下は修正の状態です
 これを再起動すればeth2が新しいブリッジに接続した状態で
 あがってきます．
 
-vyatta@monkey:~$ show interfaces
-Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
-Interface        IP Address                        S/L  Description
----------        ----------                        ---  -----------
-eth1             172.16.3.150/24                   u/u 
-eth2             -                                 u/u 
-lo               127.0.0.1/8                       u/u 
-                 ::1/128
+    vyatta@monkey:~$ show interfaces
+    Codes: S - State, L - Link, u - Up, D - Down, A - Admin Down
+    Interface        IP Address                        S/L  Description
+    ---------        ----------                        ---  -----------
+    eth1             172.16.3.150/24                   u/u 
+    eth2             -                                 u/u 
+    lo               127.0.0.1/8                       u/u 
+                     ::1/128
 
 eth2はトランクポートです．
 
